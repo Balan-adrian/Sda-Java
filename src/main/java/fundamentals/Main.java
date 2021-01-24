@@ -20,6 +20,7 @@ public class Main {
 //
 //        //Task1
 //        tasksExercices1.perimeters();
-TasksExercices.BMI();
+//TasksExercices.BMI();
+TasksExercices.fizzBuzz();
     }
 }

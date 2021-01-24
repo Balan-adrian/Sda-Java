@@ -25,16 +25,42 @@ public class TasksExercices {
     //The optimal BMI range is from 18.5 to 24.9, smaller or larger values are non-optimal
     //values. Your program should write "BMI optimal" or "BMI not optimal", according to the
     //assumptions above.
-    public static void BMI() {
+//    public static void BMI() {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Insert your height in cm:");
+//        int height = scanner.nextInt();
+//        System.out.println("Insert your weight in kg:");
+//        float weight = scanner.nextFloat();
+//        float bmi = weight / ((float) height / 100 * (float) height / 100);
+//        if ((bmi > 18.5f) && (bmi < 24.9)){
+//            System.out.println(bmi + "BMI optional");}
+//        else {
+//            System.out.println(bmi + "BMI not optional");
+  //  }}
+    //Write an application that takes a positive number from the user (type int) and
+    //writes all numbers from 1 to the given number, each on the next line,
+    //with the following changes:
+    //● in place of numbers divisible by 3, instead of a number the program should print "Fizz"
+    // ● in place of numbers divisible by 7, instead of a number the program should write "Buzz"
+    // ● if the number is divisible by both 3 and 7, the program should print "Fizz buzz"
+
+    public static void fizzBuzz () {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Insert your height in cm:");
-        int height = scanner.nextInt();
-        System.out.println("Insert your weight in kg:");
-        float weight = scanner.nextFloat();
-        float bmi = weight / ((float) height / 100 * (float) height / 100);
-        if ((bmi > 18.5f) && (bmi < 24.9)){
-            System.out.println(bmi + "BMI optional");}
-        else {
-            System.out.println(bmi + "BMI not optional");
-    }}
+        System.out.println("Introduc numarul:");
+        int numar = scanner.nextInt();
+        for (int i = 1 ; i <= numar ; i++) {
+         if ((i % 3) ==0 && (i % 7) == 0) {
+                System.out.println("Fizz buzz");
+            }
+         else if (i % 7 == 0){
+             System.out.println("Buzz");}
+             else if(i % 3 == 0){
+                 System.out.println("Fizz");
+         }
+             else {
+             System.out.println(i);
+         }
+        }
+
+    }
 }
