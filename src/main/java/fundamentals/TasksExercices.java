@@ -61,6 +61,5 @@ public class TasksExercices {
              System.out.println(i);
          }
         }
-
     }
 }

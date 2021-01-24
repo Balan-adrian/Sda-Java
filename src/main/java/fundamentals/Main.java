@@ -22,5 +22,6 @@ public class Main {
 //        tasksExercices1.perimeters();
 //TasksExercices.BMI();
 TasksExercices.fizzBuzz();
+
     }
 }
