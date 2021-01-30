@@ -36,30 +36,58 @@ public class TasksExercices {
 //            System.out.println(bmi + "BMI optional");}
 //        else {
 //            System.out.println(bmi + "BMI not optional");
-  //  }}
+    //  }}
     //Write an application that takes a positive number from the user (type int) and
     //writes all numbers from 1 to the given number, each on the next line,
     //with the following changes:
     //● in place of numbers divisible by 3, instead of a number the program should print "Fizz"
     // ● in place of numbers divisible by 7, instead of a number the program should write "Buzz"
     // ● if the number is divisible by both 3 and 7, the program should print "Fizz buzz"
-
     public static void fizzBuzz () {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduc numarul:");
         int numar = scanner.nextInt();
         for (int i = 1 ; i <= numar ; i++) {
-         if ((i % 3) ==0 && (i % 7) == 0) {
+            if ((i % 3) ==0 && (i % 7) == 0) {
                 System.out.println("Fizz buzz");
             }
-         else if (i % 7 == 0){
-             System.out.println("Buzz");}
-             else if(i % 3 == 0){
-                 System.out.println("Fizz");
-         }
-             else {
-             System.out.println(i);
-         }
+            else if (i % 7 == 0){
+                System.out.println("Buzz");}
+            else if(i % 3 == 0){
+                System.out.println("Fizz");
+            }
+            else {
+                System.out.println(i);}
         }
     }
+
+    //Write an application that takes a positive number from the user (type int)
+    // and prints all prime numbers greater than 1 and less than the given number.
+    public static void toateNumerelePositive() {
+        System.out.println("Introduc numarul:");
+        Scanner scanner = new Scanner(System.in);
+        int Numar = scanner.nextInt();
+        if (Numar <= 1) {
+            System.out.println("Numarul nu e mai mare de 1");
+            return;
+        }
+        else {//cu return, else este inutil si se scoate
+            for(int i = 2; i <= Numar; i++) {
+                if (isPrime(i)){
+                    System.out.println(i);
+                }
+            }
+        }
+
+    }
+
+    private static boolean isPrime(int nr) {
+        for(int i = 2; i < nr; i++) {
+            if (nr % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
 }
+
