@@ -44,6 +44,7 @@ public class TasksExercices {
     // ● in place of numbers divisible by 7, instead of a number the program should write "Buzz"
     // ● if the number is divisible by both 3 and 7, the program should print "Fizz buzz"
 
+
     public static void fizzBuzz() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduc numarul:");
@@ -58,6 +59,7 @@ public class TasksExercices {
             } else {
                 System.out.println(i);
             }
+
         }
     }
 
@@ -70,9 +72,12 @@ public class TasksExercices {
         if (Numar <= 1) {
             System.out.println("Numarul nu e mai mare de 1");
             return;
-        } else {//cu return, else este inutil si se scoate
-            for (int i = 2; i <= Numar; i++) {
-                if (isPrime(i)) {
+
+        }
+        else {//cu return, else este inutil si se scoate
+            for(int i = 2; i <= Numar; i++) {
+                if (isPrime(i)){
+
                     System.out.println(i);
                 }
             }
@@ -81,13 +86,16 @@ public class TasksExercices {
     }
 
     private static boolean isPrime(int nr) {
-        for (int i = 2; i < nr; i++) {
-            if (nr % i == 0) {
+
+        for(int i = 2; i < nr; i++) {
+            if (nr % i == 0){
+
                 return false;
             }
         }
         return true;
     }
+
 
     private static boolean isPrime1(int nr) {
         if (nr == 2) {
@@ -162,3 +170,4 @@ public class TasksExercices {
         System.out.println(dog1.getName().equals(dog2.getName()));
     }
 }
+
