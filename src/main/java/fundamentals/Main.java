@@ -21,7 +21,10 @@ public class Main {
 //        //Task1
 //        tasksExercices1.perimeters();
 //TasksExercices.BMI();
-TasksExercices.fizzBuzz();
-
+//TasksExercices.fizzBuzz();
+//TasksExercices.longestWord();
+//TasksExercices.stutters();
+//TasksExercices.testString();
+TasksExercices.textObject();
     }
 }
