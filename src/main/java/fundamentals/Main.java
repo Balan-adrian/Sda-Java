@@ -29,6 +29,11 @@ public class Main {
 //        tasksExercices1.perimeters();
 //TasksExercices.BMI();
 //TasksExercices.fizzBuzz();
+//TasksExercices.longestWord();
+//TasksExercices.stutters();
+//TasksExercices.testString();
+TasksExercices.textObject();
+
 TasksExercices.toateNumerelePositive();
 
 //Dog.latra();
@@ -82,5 +87,6 @@ TasksExercices.toateNumerelePositive();
 
 //4. Write a Java program to find the number of even and odd integers from an array of integers: [1, 7, 3, 10, 9].
         
+
     }
 }
