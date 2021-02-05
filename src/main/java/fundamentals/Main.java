@@ -1,5 +1,6 @@
 package fundamentals;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -32,9 +33,9 @@ public class Main {
 //TasksExercices.longestWord();
 //TasksExercices.stutters();
 //TasksExercices.testString();
-TasksExercices.textObject();
+//TasksExercices.textObject();
 
-TasksExercices.toateNumerelePositive();
+//TasksExercices.toateNumerelePositive();
 
 //Dog.latra();
 //Dog.mananca(70);
@@ -43,50 +44,15 @@ TasksExercices.toateNumerelePositive();
 //Dog.marime(30);
 //Cat.toarce();
 
-//        double[] myArray = {3, 2.5, -8, 11};
-//            // PRINT ALL ELEMENTS
-//            for(int i=0; i < myArray.length; i++){
-//                System.out.print(myArray[i] + " ");
-//                }
-//            // SUMMING ALL ELEMENTS
-//            double total = 0;
-//            for(int i=0; i < myArray.length; i++){
-//                total = total + myArray[i];
-//                }
-//            System.out.println("Total is: " + total);
-//
-//        double[] Array = {3, 2.5, -8, 11};
-//        // FIND LARGEST ELEMENT
-//        double max = Array[0];
-//        for(int i=1; i < Array.length; i++){
-//            if(myArray[i] > max){
-//                max = Array[i];
-//                }
-//            }
-//        System.out.print("Max is: " + max);
-
-//1. Write a Java program to calculate thea verage value of array elements: [1, 7, 3, 10, 9].
-//        int [] myArray = {1, 7, 3, 10, 9};
-//        int sum = 0;
-//        for (int i = 0; i < myArray.length; i++){
-//            sum += myArray[i];
-//        }
-//        System.out.println("Verage value of array elements is: " + sum / 5);
-
-//2. Write a Java program to print all odd numbers from an array: [1, 7, 3, 10, 9].
-//        int [] myArray = {1, 7, 3, 10, 9};
-//        for (int i = 0; i < myArray.length; i++){
-//            if (myArray[i] % 2 != 0){
-//                System.out.print(myArray[i] + " ");
-//            }
-//        }
-
-//3. Write a Java program to reverse an array of integer values: [1, 7, 3, 10, 9]
-//        int [] myArray = {1, 7, 3, 10, 9};
-//        System.out.println(myArray[4] + ", " + myArray[3] + ", " + myArray[2] + ", " + myArray[1] + ", " + myArray[0]);
-
-//4. Write a Java program to find the number of even and odd integers from an array of integers: [1, 7, 3, 10, 9].
-        
-
+        ArraysExercises.maxProduct();
+        ArraysExercises.testValueArray(6);
+        ArraysExercises.remuveElementArray(5);
+        ArraysExercises.maxNumber();
+        ArraysExercises.duplicateValue();
+        StringExercises.findCharIndex(3);
+        StringExercises.valuesSpecificSequence("are");
+        StringExercises.replaceCharacter();
+        StringExercises.uppercaseFirstLetterOfEveryWorld();
+        StringExercises.compare2Strings("Mouse","mouse");
     }
 }
